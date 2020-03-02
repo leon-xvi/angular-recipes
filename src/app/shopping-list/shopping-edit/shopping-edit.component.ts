@@ -32,7 +32,7 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
     );
   }
 
-  onDeleteItem(index: number) {
+  onDeleteItem() {
     this.slService.deleteIngredient(this.editedItemIndex);
     this.onClear();
   }
